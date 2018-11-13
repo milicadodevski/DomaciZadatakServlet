@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forma</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            form{
+                margin-left: 100px;
+            }
+            p{
+                margin-left: 250px;
+            }
+        </style>
+    </head>
+    <body bgcolor="#cccff">
+        <form action="Servlet" method="POST" >
+            <h3 style="color:#000066">OSNOVNI PODACI O POSLOVNOM PARTNERU: </h3>
+            
+            <table border="1 solid" >
+                <tr>
+                    <td style="color:#000066" width="100px"> <i>Ime </i></td>
+                    <td><input type="text" name="ime" value=""></td>
+                </tr>
+                <tr>
+                    <td style="color:#000066"> <i> Adresa </i></td>
+                     <td><input type="text" name="adresa" value=""></td>
+                </tr>
+                <tr>
+                    <td style="color:#000066"> <i>E-mail</i></td>
+                     <td><input type="text" name="e-mail" value=""></td>
+                </tr>  
+                <tr>
+                    <td style="color:#000066"> <i>Telefon </i></td>
+                    <td><input type="text" name="telefon" value=""></td>
+                </tr>  
+                <tr>
+                    <td style="color:#000066"><i>Zanimanje</i></td>
+                    <td><select name="zanimanje">
+                        <option value="programer">Programer</option>
+                        <option value="menadzer">Menadzer</option>
+                        <option value="productowner">Product owner</option>
+                    </select></td>
+                </tr>
+
+            </table>
+            
+            
+            <h4 style="color:#000066"> <i>Predznanje Jave</i> </h4>
+            <input type="radio" name="predznanje" value="Nema"> <i> Nema</i>
+            <input type="radio" name="predznanje" value="Malo"> <i>Malo</i>
+            <input type="radio" name="predznanje" value="Srednje"> <i>Srednje</i>
+            <input type="radio" name="predznanje" value="Visoko"> <i>Visoko</i> <br>
+            <tr>
+                <td> <h4 style="color:#000066"><i> Napomena </i></h4> </td> 
+                <td> <textarea name="napomena" type="text" rows="10" cols="30"> </textarea> </td>
+        </tr> <br>
+        <br> <tr><input type="checkbox" value=""> <i> Da li zelite da budete sacuvani u bazi? </i> </tr><br> <br>
+    <p>
+        <input type="submit" value="Obradi partnera">
+        <input type="reset" value="Obrisi formu"></p>     
+    </form>
+        
+       
+    </body>
+</html>
